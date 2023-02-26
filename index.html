@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom Dialog Box</title>
+		<link rel="stylesheet" href="./dialogbox.css" />
+	</head>
+
+	<body>
+		<script src="./dialogbox.js"></script>
+		<script>
+			DialogBox.prompt("Please enter your name:", null, "text", "Save", "Cancel")
+            .then((result) => {
+					console.log(result);
+				}
+			);
+			DialogBox.confirm("Are you sure want to delete this Account",null,"Yes,Delete","No")
+            .then((result) => {
+				console.log(result);
+			});
+			DialogBox.alert("Success", null);
+		</script>
+	</body>
+</html>

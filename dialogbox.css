@@ -1,0 +1,89 @@
+.custom-prompt {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	z-index: 1000;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(68, 73, 74);
+	padding: 10px 30px;
+	border-radius: 10px;
+	min-width: 400px;
+}
+.custom-prompt-backdrop {
+	position: fixed;
+	inset: 0;
+	background-color: #4e4e4e;
+	z-index: 999;
+}
+.custom-prompt-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.custom-prompt-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+.custom-prompt-heading {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+.custom-prompt-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 0;
+	margin: 10px 0;
+	border-bottom: 1px solid #646464;
+	border-top: 1px solid #646464;
+}
+.custom-prompt-message {
+	margin: 0;
+	font-size: 16px;
+}
+.custom-prompt-input {
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin: 15px 0;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+.custom-prompt-input:focus {
+	outline: none;
+	border: 1px solid #0d6efd;
+	box-shadow: 0 0 0 5px #cfe2ff;
+}
+.custom-prompt-buttons {
+	align-self: flex-end;
+	display: flex;
+	gap: 10px;
+}
+.custom-prompt-ok-button,
+.custom-prompt-cancel-button {
+	padding: 10px 15px;
+	font-size: 16px;
+	background-color: #198754;
+	color: aliceblue;
+	border: none;
+	border-radius: 10px;
+}
+.custom-prompt-cancel-button {
+	background-color: #dc3545;
+}
+
+.custom-prompt button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.custom-prompt button:active {
+	opacity: 0.9;
+}
+.custom-prompt button:focus {
+	outline: 1.5px solid #000000;
+	outline-offset: 1px;
+}
